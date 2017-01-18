@@ -1,0 +1,9 @@
+FROM rainu/intellij
+MAINTAINER rainu <rainu@raysha.de>
+
+#install golang
+ENV GOLANG_LINK "https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz"
+RUN wget -nv $GOLANG_LINK -O /tmp/golang.tar.gz &&\
+	tar -xzvf /tmp/golang.tar.gz -C /usr/local &&\
+	rm /tmp/golang.tar.gz &&\
+	
