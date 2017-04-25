@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk
 MAINTAINER rainu <rainu@raysha.de>
 
-ENV INTELLIJ_LINK http://download.jetbrains.com/idea/ideaIU-2017.1.tar.gz
+ENV INTELLIJ_LINK http://download.jetbrains.com/idea/ideaIU-2017.1.1.tar.gz
 ENV GOLANG http://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
 
 ENV USERNAME intellij
