@@ -15,7 +15,7 @@ RUN mkdir -p /home/intellij && \
 RUN wget -nv $INTELLIJ_LINK -O /tmp/intellij.tar.gz &&\
 	tar -xzvf /tmp/intellij.tar.gz -C /opt/ && mv /opt/$(ls /opt/) /opt/intellij/ &&\
 	rm /tmp/intellij.tar.gz &&\
-	rm -rf /opt/intellij/jre/jre && ln -s $JAVA_HOME/jre /opt/intellij/jre/jre
+	rm -rf /opt/intellij/jre64 && ln -s $JAVA_HOME/jre /opt/intellij/jre64
 
 #download and extract golang
 RUN wget -nv $GOLANG -O /tmp/golang.tar.gz &&\
